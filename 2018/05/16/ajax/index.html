@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Yjiacola">
 <meta property="og:description" content="AJAX简称AJAX全名称：Asynchronous JavaScript And XML。 概念别的语言都是同步，js为异步。不是新技术 -&amp;gt;难的是拿到数据之后干嘛由Google推广  -&amp;gt;联想搜索前后端数据交互的一种混杂技术（简单的说，就是通过制定的字段动态获取数据）    接口 + 字段 + 请求方式 = 想要的数据">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-21T10:55:04.000Z">
+<meta property="og:updated_time" content="2018-05-21T10:56:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ajax事件">
 <meta name="twitter:description" content="AJAX简称AJAX全名称：Asynchronous JavaScript And XML。 概念别的语言都是同步，js为异步。不是新技术 -&amp;gt;难的是拿到数据之后干嘛由Google推广  -&amp;gt;联想搜索前后端数据交互的一种混杂技术（简单的说，就是通过制定的字段动态获取数据）    接口 + 字段 + 请求方式 = 想要的数据">
@@ -189,7 +189,6 @@
 <h2 id="URI编码"><a href="#URI编码" class="headerlink" title="URI编码"></a>URI编码</h2><p>中文转URI -&gt;encodeURI(‘中文’)<br>URI转中文 -&gt;decodeURI(‘%E9%9B%A8’)</p>
 <h2 id="http常见状态码"><a href="#http常见状态码" class="headerlink" title="http常见状态码"></a>http常见状态码</h2><p>200-207，302    成功<br>302，304        重定向（302算成功）<br>404，400        请求错误，文件找不到<br>500，502        服务器错误<br><strong>ajax.status;</strong></p>
 <h2 id="queryString（字符串转对象）"><a href="#queryString（字符串转对象）" class="headerlink" title="queryString（字符串转对象）"></a>queryString（字符串转对象）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">user=input.value&amp;password=input2.value</span><br><span class="line">&#123;</span><br><span class="line">user:shenshen,</span><br><span class="line">password:321</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>let str = ‘user=shenshen&amp;password=321’;<br>let obj = {};<br>let arr = str.split(‘&amp;’);<br>arr.forEach(e=&gt;{<br>    let s = e.split(‘=’);<br>    obj[s[0]] = s[1];<br>});</p>
 <p><code>`</code></p>
 <h2 id="onreadystatechange"><a href="#onreadystatechange" class="headerlink" title="onreadystatechange"></a>onreadystatechange</h2><p>存储函数（或函数名），每当 readyState 属性改变时，就会调用该函数。</p>
 <h3 id="5个阶段"><a href="#5个阶段" class="headerlink" title="5个阶段"></a>5个阶段</h3><p>0-4     -&gt;1-4<br>如果要监听，那么要把onreadystatechange放到send之前，4代表请求完成。（ajax.readyState)</p>
