@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>面向对象 | Yjiacola</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="定义把具有相同特征的代码抽离出来归为一类，把描述细节的内容放在这个类的原型下的一种变成思想。 new 函数运算符1let d = new Date(); 加不加括号都会运行函数，只不过加括号是为了传参。构造函数中的this指向它的实例化对象，默认返回构造的实例化对象。如果强行加上return，如果是简单类型的数据，返回值还是构造函数的实例化对象，如果复合类型，就返回这个复合类型。 prototyp">
+  <meta name="description" content="定义把具有相同特征的代码抽离出来归为一类，把描述细节的内容放在这个类的原型下的一种变成思想。 new 函数运算符1let d = new Date(); 加不加括号都会运行函数，只不过加括号是为了传参。构造函数中的this指向它的实例化对象，默认返回构造的实例化对象。如果强行加上return，如果是简单类型的数据，返回值还是构造函数的实例化对象，如果复合类型，就返回这个复合类型。">
 <meta name="keywords" content="技术整理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="面向对象">
 <meta property="og:url" content="http://yoursite.com/2018/05/29/面向对象/index.html">
 <meta property="og:site_name" content="Yjiacola">
-<meta property="og:description" content="定义把具有相同特征的代码抽离出来归为一类，把描述细节的内容放在这个类的原型下的一种变成思想。 new 函数运算符1let d = new Date(); 加不加括号都会运行函数，只不过加括号是为了传参。构造函数中的this指向它的实例化对象，默认返回构造的实例化对象。如果强行加上return，如果是简单类型的数据，返回值还是构造函数的实例化对象，如果复合类型，就返回这个复合类型。 prototyp">
+<meta property="og:description" content="定义把具有相同特征的代码抽离出来归为一类，把描述细节的内容放在这个类的原型下的一种变成思想。 new 函数运算符1let d = new Date(); 加不加括号都会运行函数，只不过加括号是为了传参。构造函数中的this指向它的实例化对象，默认返回构造的实例化对象。如果强行加上return，如果是简单类型的数据，返回值还是构造函数的实例化对象，如果复合类型，就返回这个复合类型。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-29T09:13:42.000Z">
+<meta property="og:updated_time" content="2018-05-29T09:15:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面向对象">
-<meta name="twitter:description" content="定义把具有相同特征的代码抽离出来归为一类，把描述细节的内容放在这个类的原型下的一种变成思想。 new 函数运算符1let d = new Date(); 加不加括号都会运行函数，只不过加括号是为了传参。构造函数中的this指向它的实例化对象，默认返回构造的实例化对象。如果强行加上return，如果是简单类型的数据，返回值还是构造函数的实例化对象，如果复合类型，就返回这个复合类型。 prototyp">
+<meta name="twitter:description" content="定义把具有相同特征的代码抽离出来归为一类，把描述细节的内容放在这个类的原型下的一种变成思想。 new 函数运算符1let d = new Date(); 加不加括号都会运行函数，只不过加括号是为了传参。构造函数中的this指向它的实例化对象，默认返回构造的实例化对象。如果强行加上return，如果是简单类型的数据，返回值还是构造函数的实例化对象，如果复合类型，就返回这个复合类型。">
   
     <link rel="alternative" href="/atom.xml" title="Yjiacola" type="application/atom+xml">
   
@@ -180,6 +180,7 @@
         <h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>把具有相同特征的代码抽离出来归为一类，把描述细节的内容放在这个类的原型下的一种变成思想。</p>
 <h2 id="new-函数运算符"><a href="#new-函数运算符" class="headerlink" title="new 函数运算符"></a>new 函数运算符</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">let d = new Date();</span><br></pre></td></tr></table></figure>
 <p>加不加括号都会运行函数，只不过加括号是为了传参。<br>构造函数中的this指向它的实例化对象，默认返回构造的实例化对象。如果强行加上return，如果是简单类型的数据，返回值还是构造函数的实例化对象，如果复合类型，就返回这个复合类型。</p>
+<a id="more"></a>
 <h2 id="prototype-原型-proto-原型链"><a href="#prototype-原型-proto-原型链" class="headerlink" title="prototype[原型]/proto[原型链]"></a>prototype[原型]/<strong>proto</strong>[原型链]</h2><h4 id="prototype-原型"><a href="#prototype-原型" class="headerlink" title="prototype[原型]"></a>prototype[原型]</h4><p>当创建一个函数的时候，自身带的属性，<strong>这个属性的值为对象</strong>。<br>如果一个对象没有某个属性的或者方法，那么还会继续去对这个对象的构造函数的原型下去找某个属性或者方法。</p>
 <h4 id="实例："><a href="#实例：" class="headerlink" title="实例："></a>实例：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function Person(name,age)&#123;</span><br><span class="line">    this.name = name;</span><br><span class="line">    this.age = age;</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype.say = function(say)&#123;</span><br><span class="line">    alert(say);</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype.running = function()&#123;</span><br><span class="line">    alert(1);</span><br><span class="line">&#125;</span><br><span class="line">let p = new Person(&apos;ss&apos;,12);</span><br><span class="line">let p2 = new Person(&apos;ll&apos;,13);</span><br><span class="line">p.say(12);      //12</span><br><span class="line">p2.runing();    // 1</span><br></pre></td></tr></table></figure>
 <h4 id="proto-原型链"><a href="#proto-原型链" class="headerlink" title="proto[原型链]"></a><strong>proto</strong>[原型链]</h4><p>对象身上才有原型链（包括函数）。</p>
