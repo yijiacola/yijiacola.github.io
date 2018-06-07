@@ -8,17 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>正则表达式 | Yjiacola</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##1. 什么是正则表达式 ##  正则表达式为一个对象      简写 ——–&amp;gt;  //    /字符串/—&amp;gt;里面只能是字符串  还不能加引号 标准写法 —&amp;gt;  new RegExp(正则||字符串)–&amp;gt;里面可以是字符串可以是正则两种的区别  代码实例   c 12345678910111213141516171819202122     1.  /c/  ===&amp;gt;">
+  <meta name="description" content="1. 什么是正则表达式 正则表达式为一个对象      简写 ——–&amp;gt;  //    /字符串/—&amp;gt;里面只能是字符串  还不能加引号 标准写法 —&amp;gt;  new RegExp(正则||字符串)–&amp;gt;里面可以是字符串可以是正则两种的区别  代码实例    1234let c = 2;1.  /c/  ===&amp;gt; &amp;apos;c&amp;apos;  简写中的C会被认为是字符串（不能放">
+<meta name="keywords" content="技术整理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="正则表达式">
 <meta property="og:url" content="http://yoursite.com/2018/06/07/正则表达式/index.html">
 <meta property="og:site_name" content="Yjiacola">
-<meta property="og:description" content="##1. 什么是正则表达式 ##  正则表达式为一个对象      简写 ——–&amp;gt;  //    /字符串/—&amp;gt;里面只能是字符串  还不能加引号 标准写法 —&amp;gt;  new RegExp(正则||字符串)–&amp;gt;里面可以是字符串可以是正则两种的区别  代码实例   c 12345678910111213141516171819202122     1.  /c/  ===&amp;gt;">
+<meta property="og:description" content="1. 什么是正则表达式 正则表达式为一个对象      简写 ——–&amp;gt;  //    /字符串/—&amp;gt;里面只能是字符串  还不能加引号 标准写法 —&amp;gt;  new RegExp(正则||字符串)–&amp;gt;里面可以是字符串可以是正则两种的区别  代码实例    1234let c = 2;1.  /c/  ===&amp;gt; &amp;apos;c&amp;apos;  简写中的C会被认为是字符串（不能放">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-07T01:51:08.000Z">
+<meta property="og:updated_time" content="2018-06-07T01:58:19.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="正则表达式">
-<meta name="twitter:description" content="##1. 什么是正则表达式 ##  正则表达式为一个对象      简写 ——–&amp;gt;  //    /字符串/—&amp;gt;里面只能是字符串  还不能加引号 标准写法 —&amp;gt;  new RegExp(正则||字符串)–&amp;gt;里面可以是字符串可以是正则两种的区别  代码实例   c 12345678910111213141516171819202122     1.  /c/  ===&amp;gt;">
+<meta name="twitter:description" content="1. 什么是正则表达式 正则表达式为一个对象      简写 ——–&amp;gt;  //    /字符串/—&amp;gt;里面只能是字符串  还不能加引号 标准写法 —&amp;gt;  new RegExp(正则||字符串)–&amp;gt;里面可以是字符串可以是正则两种的区别  代码实例    1234let c = 2;1.  /c/  ===&amp;gt; &amp;apos;c&amp;apos;  简写中的C会被认为是字符串（不能放">
   
     <link rel="alternative" href="/atom.xml" title="Yjiacola" type="application/atom+xml">
   
@@ -169,29 +170,28 @@
 
         
         <a href="/2018/06/07/正则表达式/" class="archive-article-date">
-  	<time datetime="2018-06-07T01:51:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-07</time>
+  	<time datetime="2018-06-06T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##1. 什么是正则表达式 ##</p>
-<blockquote>
+        <h2 id="1-什么是正则表达式"><a href="#1-什么是正则表达式" class="headerlink" title="1. 什么是正则表达式"></a>1. 什么是正则表达式</h2><blockquote>
 <p>正则表达式为一个对象    </p>
 <ul>
 <li>简写 ——–&gt;  //    /字符串/—&gt;里面只能是字符串  还不能加引号</li>
 <li>标准写法 —&gt;  new RegExp(正则||字符串)–&gt;里面可以是字符串可以是正则<br>两种的区别  代码实例</li>
 </ul>
 </blockquote>
-<pre><code><figure class="highlight plain"><figcaption><span>c </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">     1.  /c/  ===&gt; &apos;c&apos;  简写中的C会被认为是字符串（不能放变量）</span><br><span class="line">     2.  new RegExp(c)  2 这个中的c为变量，代表是2</span><br><span class="line">     -</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">火星文       --&gt;专门用来操作（检查  搜索）字符串的工具  || 一种规则</span><br><span class="line"></span><br><span class="line">    ```//找出下面字符串中带有数字的字符，并且放到一个数组中</span><br><span class="line">    let str=&apos;dhsuaey71 9den1i9dj10die2jc8r9&apos;;//   [7,1,9,1,9,1,0,2,8]</span><br><span class="line">    //普通字符串的方法</span><br><span class="line">    let arr=[];</span><br><span class="line">    let temp=&apos;&apos;;</span><br><span class="line">    for(let i=0;i&lt;str.length;i++)&#123;</span><br><span class="line">        if(!isNan(parseInt(str[i])))&#123;</span><br><span class="line">            temp+=str[i];</span><br><span class="line">        &#125;else&#123;</span><br><span class="line">            if(temp)&#123;</span><br><span class="line">                arr.push（temp）;</span><br><span class="line">                temp=&apos;&apos;;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-</code></pre><blockquote>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let c = 2;</span><br><span class="line">1.  /c/  ===&gt; &apos;c&apos;  简写中的C会被认为是字符串（不能放变量）</span><br><span class="line">2.  new RegExp(c)  2 这个中的c为变量，代表是2</span><br><span class="line">-</span><br></pre></td></tr></table></figure>
+<h2 id="火星文"><a href="#火星文" class="headerlink" title="火星文"></a>火星文</h2><pre><code>专门用来操作（检查  搜索）字符串的工具  || 一种规则
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">找出下面字符串中带有数字的字符，并且放到一个数组中</span><br><span class="line">let str=&apos;dhsuaey71 9den1i9dj10die2jc8r9&apos;;//   [7,1,9,1,9,1,0,2,8]</span><br><span class="line">//普通字符串的方法</span><br><span class="line">let arr=[];</span><br><span class="line">let temp=&apos;&apos;;</span><br><span class="line">for(let i=0;i&lt;str.length;i++)&#123;</span><br><span class="line">    if(!isNan(parseInt(str[i])))&#123;</span><br><span class="line">        temp+=str[i];</span><br><span class="line">    &#125;else&#123;</span><br><span class="line">        if(temp)&#123;</span><br><span class="line">            arr.push（temp）;</span><br><span class="line">            temp=&apos;&apos;;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
 <p>使用正则表达式    —&gt;  console.log(str.match(/\d+/g));</p>
 </blockquote>
-<h2 id="text-string-正则"><a href="#text-string-正则" class="headerlink" title="//.text(string) ##  正则"></a>//.text(string) ##  正则</h2><blockquote>
-<p>返回值是布尔值 如果string中有正则匹配项就返回true，否则false</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let str = &apos;abc&apos;;</span><br><span class="line"> console.dir(/x/.test(str));</span><br></pre></td></tr></table></figure>
+<h2 id="a-text-string"><a href="#a-text-string" class="headerlink" title="/a/.text(string)"></a>/a/.text(string)</h2><pre><code>返回值是布尔值 如果string中有正则匹配项就返回true，否则false
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">let str = &apos;abc&apos;;</span><br><span class="line"> console.dir(/x/.test(str));</span><br></pre></td></tr></table></figure>
 <h1 id="search"><a href="#search" class="headerlink" title="search"></a>search</h1><blockquote>
 <p>string.search(//  ||  字符串)—-&gt;返回值  是下标</p>
 <p>找到指定字符的位置</p>
@@ -226,9 +226,9 @@
 </ul>
 </blockquote>
 <h2 id="转义符"><a href="#转义符" class="headerlink" title="转义符"></a>转义符</h2><blockquote>
-<p>\  </p>
+<p>\  一个斜杠</p>
 </blockquote>
-<h2 id="元字符"><a href="#元字符" class="headerlink" title="元字符"></a>元字符</h2><p>\d  –&gt;  一个数字<br>\D  –&gt;  一个非数字<br>\w  –&gt;  一个字母数字下划线<br>\W  –&gt;  一个非字母数字下划线<br>\s  –&gt;  一个空格<br>\S  –&gt;  一个非空格<br>\b  –&gt;<br>\B  –&gt;</p>
+<h2 id="元字符"><a href="#元字符" class="headerlink" title="元字符"></a>元字符</h2><p>\d  –&gt;  一个数字<br>\D  –&gt;  一个非数字<br>\w  –&gt;  一个字母数字下划线<br>\W  –&gt;  一个非字母数字下划线<br>\s  –&gt;  一个空格<br>\S  –&gt;  一个非空格<br>\b  –&gt;  边界符<br>\B  –&gt;  非边界符</p>
 <h2 id="replace"><a href="#replace" class="headerlink" title="replace"></a>replace</h2><blockquote>
 <p>string.replace(要替换的|//,替换成什么|callback) –&gt;返回   新的字符串<br>callback -&gt;默认  必须要有返回值，不然都为undefined，每次匹配到数据之后会调用一次这个函数<br><strong>第一个参数</strong><br>    每次匹配到的数据<br> <strong>第二个参数</strong><br>     每次找到数据的下标<br> <strong>第三个参数</strong><br>     整个字符串<br><strong>第四个参数（包括之后）</strong><br>    undefined</p>
 </blockquote>
@@ -286,7 +286,29 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术整理</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/正则//" class="article-tag-list-link color3">正则</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
