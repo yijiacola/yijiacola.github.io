@@ -161,7 +161,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/08/React router路由/">初识react</a>
+      <a class="article-title" href="/2018/06/08/React router路由/">React router路由</a>
     </h1>
   
 
@@ -175,14 +175,21 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="/images/router.jpeg" alt="“js”"> </p>
-<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>  对于前端来说，路由是跟history、hash的原理是差不多的，都是对于页面数据的记录，包括打印出来的URL信息，可以利用URL下的信息，获取数据进行数据的操控。<br>  路由应用的场景很多，本是由后端来操控的，因为前端慢慢接触的东西也越来越多，越来越杂，前端学习路由也避免了因页面内容的交互和后端过多的沟通，提高了工作效率。学习路由，应该先了解应用场景，更多的练习应用场景的解决方案。<br>  什么是路由？说白了，路由长什么样？其实就是我们浏览网络页面是，地址栏的信息，即url,http:<a href="http://www.miaov.com/index。" target="_blank" rel="noopener">www.miaov.com/index。</a> </p>
-<h2 id="路由的优缺点"><a href="#路由的优缺点" class="headerlink" title="路由的优缺点"></a>路由的优缺点</h2><h4 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h4><p>3.良好的交互体验。用户不需要重新刷新页面，获取数据也是通过Ajax异步获取，页面显示流畅。<br>2、良好的前后端工作分离模式。单页Web应用可以和RESTful规约一起使用，通过REST API提供接口数据，并使用Ajax异步获取，这样有助于分离客户端和服务器端工作。更进一步，可以在客户端也可以分解为静态页面和页面交互两个部分。<br>3.减轻服务器压力。服务器只用出数据就可以，不用管展示逻辑和页面合成，吞吐能力会提高几倍。<br>4.共用一套后端程序代码.不用修改后端程序代码就可以同时用于Web界面、手机、平板等多种客户端；</p>
-<h4 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h4><p> 1.SEO难度较高：由于所有的内容都在一个页面中动态替换显示，所以在SEO上其有着天然的弱势，所以如果你的站点对SEO很看重，且要用单页应用，那么就做些静态页面给搜索引擎用吧。<br>2.前进、后退管理：由于单页Web应用在一个页面中显示所有的内容，所以不能使用浏览器的前进后退功能，所有的页面切换需要自己建立堆栈管理，当然此问题也有解决方案，比如利用URI中的散列+iframe实现。<br>3.初次加载耗时多：为实现单页Web应用功能及显示效果，需要在加载页面的时候将JavaScript、CSS统一加载，部分页面可以在需要的时候加载。所以必须对JavaScript及CSS代码进行合并压缩处理，如果使用第三方库，建议使用一些大公司的CDN，因此带宽的消耗是必然的。</p>
-<p><a href="https://reacttraining.com/react-router/" target="_blank" rel="noopener">官网查询</a></p>
-<h2 id="使用-router-步骤"><a href="#使用-router-步骤" class="headerlink" title="使用 router 步骤"></a>使用 router 步骤</h2><p>打开终端，安装 router 插件，只需要安装一次就可以。输入以下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i react-router-dom -S</span><br></pre></td></tr></table></figure></p>
-<p>建立 index.js 文件，此文件用于终端运行代码唯一识别的 index 文件。在文件输入以下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">import React from &apos;react&apos;;</span><br><span class="line">import ReactDOM from &apos;react-dom&apos;;</span><br><span class="line"></span><br><span class="line">// as 表示可以更改名字，后面即为路由新名</span><br><span class="line">import &#123; BrowserRouter as Router&#125; from &apos;react-router-dom&apos;</span><br><span class="line"></span><br><span class="line">//导入要显示的文件</span><br><span class="line">import App from &apos;./ChildToParent/App/app&apos;;</span><br><span class="line"></span><br><span class="line">ReactDOM.render(</span><br><span class="line">    &lt;Router&gt;</span><br><span class="line">        &lt;App /&gt;</span><br><span class="line">    &lt;/Router&gt;</span><br><span class="line">    ,</span><br><span class="line">    document.getElementById(&apos;root&apos;)</span><br><span class="line">)</span><br><span class="line">//热更新</span><br><span class="line">if(module.hot)&#123;</span><br><span class="line">    module.hot.accept();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>在src文件夹中建立子文件夹，那里放路由链接的文件，便于管理，在子文件夹里建立三个 js 文件（实际工作需要根据需求建立），index.js放置首页显示内容，about.js 文件建立 另一个页面显示的内容。重点是 app.js 文件，这个文件是专门放路由配置的文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">import React from &apos;react&apos;;</span><br><span class="line">import &#123;Route,Link&#125; from &apos;react-router-dom&apos;;</span><br><span class="line">import Index from &apos;./index&apos;;</span><br><span class="line">import About from &apos;./about&apos;;</span><br><span class="line">class App extends React.Component &#123;</span><br><span class="line">    constructor(props) &#123;</span><br><span class="line">        super(props);</span><br><span class="line">        this.state = &#123;  &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">    render() &#123;</span><br><span class="line">        return (</span><br><span class="line">            &lt;div&gt;</span><br><span class="line">                //点击按钮跳转的页面链接</span><br><span class="line">                &lt;button&gt;&lt;Link to=&quot;/&quot;&gt;首页&lt;/Link&gt;&lt;/button&gt;</span><br><span class="line">                &lt;button&gt;&lt;Link to=&quot;/about&quot;&gt;关于&lt;/Link&gt;&lt;/button&gt;   </span><br><span class="line">                </span><br><span class="line">                 //跳转页面的路由链接</span><br><span class="line">                &lt;Route exact path=&quot;/&quot; component=&#123;Index&#125;/&gt;</span><br><span class="line">                &lt;Route path=&quot;/about&quot; component=&#123;About&#125;/&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        )</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export default App;</span><br></pre></td></tr></table></figure></p>
-<p>about.js 和 index.js 页面导入后，开启终端，输入 npm start 即可自动跳转页面。</p>
+<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>  对于前端来说，路由是跟history、hash的原理是差不多的，都是对于页面数据的记录，包括打印出来的URL信息，可以利用URL下的信息，获取数据进行数据的操控。<br>  路由应用的场景很多，本是由后端来操控的，因为前端慢慢接触的东西也越来越多，越来越杂，前端学习路由也避免了因页面内容的交互和后端过多的沟通，提高了工作效率。学习路由，应该先了解应用场景，更多的练习应用场景的解决方案。<br>  什么是路由？说白了，路由长什么样？其实就是我们浏览网络页面是，地址栏的信息，即url:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">http:www.miaov.com/index。</span><br><span class="line">``` </span><br><span class="line"> </span><br><span class="line"> &lt;!-- more --&gt;</span><br><span class="line"></span><br><span class="line">## 路由的优缺点</span><br><span class="line">#### 优点：</span><br><span class="line">3.良好的交互体验。用户不需要重新刷新页面，获取数据也是通过Ajax异步获取，页面显示流畅。</span><br><span class="line">2、良好的前后端工作分离模式。单页Web应用可以和RESTful规约一起使用，通过REST API提供接口数据，并使用Ajax异步获取，这样有助于分离客户端和服务器端工作。更进一步，可以在客户端也可以分解为静态页面和页面交互两个部分。</span><br><span class="line">3.减轻服务器压力。服务器只用出数据就可以，不用管展示逻辑和页面合成，吞吐能力会提高几倍。</span><br><span class="line">4.共用一套后端程序代码.不用修改后端程序代码就可以同时用于Web界面、手机、平板等多种客户端；</span><br><span class="line"></span><br><span class="line">#### 缺点：</span><br><span class="line"> 1.SEO难度较高：由于所有的内容都在一个页面中动态替换显示，所以在SEO上其有着天然的弱势，所以如果你的站点对SEO很看重，且要用单页应用，那么就做些静态页面给搜索引擎用吧。</span><br><span class="line">2.前进、后退管理：由于单页Web应用在一个页面中显示所有的内容，所以不能使用浏览器的前进后退功能，所有的页面切换需要自己建立堆栈管理，当然此问题也有解决方案，比如利用URI中的散列+iframe实现。</span><br><span class="line">3.初次加载耗时多：为实现单页Web应用功能及显示效果，需要在加载页面的时候将JavaScript、CSS统一加载，部分页面可以在需要的时候加载。所以必须对JavaScript及CSS代码进行合并压缩处理，如果使用第三方库，建议使用一些大公司的CDN，因此带宽的消耗是必然的。</span><br><span class="line"></span><br><span class="line">[官网查询](https://reacttraining.com/react-router/</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">## 使用 router 步骤</span><br><span class="line">打开终端，安装 router 插件，只需要安装一次就可以。输入以下：</span><br></pre></td></tr></table></figure></p>
+<p>npm i react-router-dom -S<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">建立 index.js 文件，此文件用于终端运行代码唯一识别的 index 文件。在文件输入以下代码：</span><br></pre></td></tr></table></figure></p>
+<p>import React from ‘react’;<br>import ReactDOM from ‘react-dom’;</p>
+<p>// as 表示可以更改名字，后面即为路由新名<br>import { BrowserRouter as Router} from ‘react-router-dom’</p>
+<p>//导入要显示的文件<br>import App from ‘./ChildToParent/App/app’;</p>
+<p>ReactDOM.render(<br>    <router><br>        <app><br>    </app></router><br>    ,<br>    document.getElementById(‘root’)<br>)<br>//热更新<br>if(module.hot){<br>    module.hot.accept();<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在src文件夹中建立子文件夹，那里放路由链接的文件，便于管理，在子文件夹里建立三个 js 文件（实际工作需要根据需求建立），index.js放置首页显示内容，about.js 文件建立 另一个页面显示的内容。重点是 app.js 文件，这个文件是专门放路由配置的文件。</span><br></pre></td></tr></table></figure></p>
+<p>import React from ‘react’;<br>import {Route,Link} from ‘react-router-dom’;<br>import Index from ‘./index’;<br>import About from ‘./about’;<br>class App extends React.Component {<br>    constructor(props) {<br>        super(props);<br>        this.state = {  };<br>    }<br>    render() {<br>        return (<br>            <div><br>                //点击按钮跳转的页面链接<br>                <button><link to="/">首页</button><br>                <button><link to="/about">关于</button>   </div></p>
+<pre><code>             //跳转页面的路由链接
+            &lt;Route exact path=&quot;/&quot; component={Index}/&gt;
+            &lt;Route path=&quot;/about&quot; component={About}/&gt;
+        &lt;/div&gt;
+    )
+}
+</code></pre><p>}</p>
+<p>export default App;<br><code>`</code><br>about.js 和 index.js 页面导入后，开启终端，输入 npm start 即可自动跳转页面。</p>
 
       
 
@@ -348,7 +355,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/04/初识react/">初识react</a>
+      <a class="article-title" href="/2018/06/04/初识react/">初识React</a>
     </h1>
   
 
@@ -362,7 +369,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="/images/react.jpeg" alt="“js”"> </p>
-<h2 id="什么是react？"><a href="#什么是react？" class="headerlink" title="什么是react？"></a>什么是react？</h2><p>react是Facebook开发的一款JS库，是V层框架，专门用于界面交互。它主要有两个特点：<br>1、虚拟DOM，优化性能；<br>2、组件化开发，以类为开发;</p>
+<h2 id="什么是-React？"><a href="#什么是-React？" class="headerlink" title="什么是 React？"></a>什么是 React？</h2><p>react是Facebook开发的一款JS库，是V层框架，专门用于界面交互。它主要有两个特点：<br>1、虚拟DOM，优化性能；<br>2、组件化开发，以类为开发;</p>
         
           <a class="article-more-a" href="/2018/06/04/初识react/#more">more >></a>
         
@@ -390,7 +397,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/js初识//" class="article-tag-list-link color5">js初识</a>
+        			<a href="/categories/React//" class="article-tag-list-link color1">React</a>
         		</li>
       		
 		</ul>
@@ -630,7 +637,7 @@
     </div>
   </div>
 	<span id="busuanzi_container_site_uv"> 
-			本站访客数<span id="busuanzi_value_site_uv">1023</span>人次
+			<!-- 本站访客数<span id="busuanzi_value_site_uv">1023</span>人次 -->
 	</span>
 </footer>
 
