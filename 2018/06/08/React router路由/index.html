@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018/6 | Yjiacola</title>
+  <title>初识react | Yjiacola</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Yjiacola">
-<meta property="og:url" content="http://yoursite.com/archives/2018/06/index.html">
+  <meta name="description" content="定义  对于前端来说，路由是跟history、hash的原理是差不多的，都是对于页面数据的记录，包括打印出来的URL信息，可以利用URL下的信息，获取数据进行数据的操控。  路由应用的场景很多，本是由后端来操控的，因为前端慢慢接触的东西也越来越多，越来越杂，前端学习路由也避免了因页面内容的交互和后端过多的沟通，提高了工作效率。学习路由，应该先了解应用场景，更多的练习应用场景的解决方案。  什么">
+<meta name="keywords" content="技术整理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初识react">
+<meta property="og:url" content="http://yoursite.com/2018/06/08/React router路由/index.html">
 <meta property="og:site_name" content="Yjiacola">
+<meta property="og:description" content="定义  对于前端来说，路由是跟history、hash的原理是差不多的，都是对于页面数据的记录，包括打印出来的URL信息，可以利用URL下的信息，获取数据进行数据的操控。  路由应用的场景很多，本是由后端来操控的，因为前端慢慢接触的东西也越来越多，越来越杂，前端学习路由也避免了因页面内容的交互和后端过多的沟通，提高了工作效率。学习路由，应该先了解应用场景，更多的练习应用场景的解决方案。  什么">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/images/router.jpeg">
+<meta property="og:updated_time" content="2018-06-08T10:36:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yjiacola">
+<meta name="twitter:title" content="初识react">
+<meta name="twitter:description" content="定义  对于前端来说，路由是跟history、hash的原理是差不多的，都是对于页面数据的记录，包括打印出来的URL信息，可以利用URL下的信息，获取数据进行数据的操控。  路由应用的场景很多，本是由后端来操控的，因为前端慢慢接触的东西也越来越多，越来越杂，前端学习路由也避免了因页面内容的交互和后端过多的沟通，提高了工作效率。学习路由，应该先了解应用场景，更多的练习应用场景的解决方案。  什么">
+<meta name="twitter:image" content="http://yoursite.com/images/router.jpeg">
   
     <link rel="alternative" href="/atom.xml" title="Yjiacola" type="application/atom+xml">
   
@@ -152,36 +159,64 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-React router路由" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/06/08/React router路由/" class="archive-article-date">
-  	<time datetime="2018-06-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-08</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/08/React router路由/">初识react</a>
+    <h1 class="article-title" itemprop="name">
+      初识react
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/06/08/React router路由/" class="archive-article-date">
+  	<time datetime="2018-06-07T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="/images/router.jpeg" alt="“js”"> </p>
+<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>  对于前端来说，路由是跟history、hash的原理是差不多的，都是对于页面数据的记录，包括打印出来的URL信息，可以利用URL下的信息，获取数据进行数据的操控。<br>  路由应用的场景很多，本是由后端来操控的，因为前端慢慢接触的东西也越来越多，越来越杂，前端学习路由也避免了因页面内容的交互和后端过多的沟通，提高了工作效率。学习路由，应该先了解应用场景，更多的练习应用场景的解决方案。<br>  什么是路由？说白了，路由长什么样？其实就是我们浏览网络页面是，地址栏的信息，即url,http:<a href="http://www.miaov.com/index。" target="_blank" rel="noopener">www.miaov.com/index。</a> </p>
+<h2 id="路由的优缺点"><a href="#路由的优缺点" class="headerlink" title="路由的优缺点"></a>路由的优缺点</h2><h4 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h4><p>3.良好的交互体验。用户不需要重新刷新页面，获取数据也是通过Ajax异步获取，页面显示流畅。<br>2、良好的前后端工作分离模式。单页Web应用可以和RESTful规约一起使用，通过REST API提供接口数据，并使用Ajax异步获取，这样有助于分离客户端和服务器端工作。更进一步，可以在客户端也可以分解为静态页面和页面交互两个部分。<br>3.减轻服务器压力。服务器只用出数据就可以，不用管展示逻辑和页面合成，吞吐能力会提高几倍。<br>4.共用一套后端程序代码.不用修改后端程序代码就可以同时用于Web界面、手机、平板等多种客户端；</p>
+<h4 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h4><p> 1.SEO难度较高：由于所有的内容都在一个页面中动态替换显示，所以在SEO上其有着天然的弱势，所以如果你的站点对SEO很看重，且要用单页应用，那么就做些静态页面给搜索引擎用吧。<br>2.前进、后退管理：由于单页Web应用在一个页面中显示所有的内容，所以不能使用浏览器的前进后退功能，所有的页面切换需要自己建立堆栈管理，当然此问题也有解决方案，比如利用URI中的散列+iframe实现。<br>3.初次加载耗时多：为实现单页Web应用功能及显示效果，需要在加载页面的时候将JavaScript、CSS统一加载，部分页面可以在需要的时候加载。所以必须对JavaScript及CSS代码进行合并压缩处理，如果使用第三方库，建议使用一些大公司的CDN，因此带宽的消耗是必然的。</p>
+<p><a href="https://reacttraining.com/react-router/" target="_blank" rel="noopener">官网查询</a></p>
+<h2 id="使用-router-步骤"><a href="#使用-router-步骤" class="headerlink" title="使用 router 步骤"></a>使用 router 步骤</h2><p>打开终端，安装 router 插件，只需要安装一次就可以。输入以下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i react-router-dom -S</span><br></pre></td></tr></table></figure></p>
+<p>建立 index.js 文件，此文件用于终端运行代码唯一识别的 index 文件。在文件输入以下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">import React from &apos;react&apos;;</span><br><span class="line">import ReactDOM from &apos;react-dom&apos;;</span><br><span class="line"></span><br><span class="line">// as 表示可以更改名字，后面即为路由新名</span><br><span class="line">import &#123; BrowserRouter as Router&#125; from &apos;react-router-dom&apos;</span><br><span class="line"></span><br><span class="line">//导入要显示的文件</span><br><span class="line">import App from &apos;./ChildToParent/App/app&apos;;</span><br><span class="line"></span><br><span class="line">ReactDOM.render(</span><br><span class="line">    &lt;Router&gt;</span><br><span class="line">        &lt;App /&gt;</span><br><span class="line">    &lt;/Router&gt;</span><br><span class="line">    ,</span><br><span class="line">    document.getElementById(&apos;root&apos;)</span><br><span class="line">)</span><br><span class="line">//热更新</span><br><span class="line">if(module.hot)&#123;</span><br><span class="line">    module.hot.accept();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在src文件夹中建立子文件夹，那里放路由链接的文件，便于管理，在子文件夹里建立三个 js 文件（实际工作需要根据需求建立），index.js放置首页显示内容，about.js 文件建立 另一个页面显示的内容。重点是 app.js 文件，这个文件是专门放路由配置的文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">import React from &apos;react&apos;;</span><br><span class="line">import &#123;Route,Link&#125; from &apos;react-router-dom&apos;;</span><br><span class="line">import Index from &apos;./index&apos;;</span><br><span class="line">import About from &apos;./about&apos;;</span><br><span class="line">class App extends React.Component &#123;</span><br><span class="line">    constructor(props) &#123;</span><br><span class="line">        super(props);</span><br><span class="line">        this.state = &#123;  &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">    render() &#123;</span><br><span class="line">        return (</span><br><span class="line">            &lt;div&gt;</span><br><span class="line">                //点击按钮跳转的页面链接</span><br><span class="line">                &lt;button&gt;&lt;Link to=&quot;/&quot;&gt;首页&lt;/Link&gt;&lt;/button&gt;</span><br><span class="line">                &lt;button&gt;&lt;Link to=&quot;/about&quot;&gt;关于&lt;/Link&gt;&lt;/button&gt;   </span><br><span class="line">                </span><br><span class="line">                 //跳转页面的路由链接</span><br><span class="line">                &lt;Route exact path=&quot;/&quot; component=&#123;Index&#125;/&gt;</span><br><span class="line">                &lt;Route path=&quot;/about&quot; component=&#123;About&#125;/&gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">        )</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export default App;</span><br></pre></td></tr></table></figure></p>
+<p>about.js 和 index.js 页面导入后，开启终端，输入 npm start 即可自动跳转页面。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -193,7 +228,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -206,115 +241,104 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/06/08/React router路由/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/06/07/正则表达式/" class="archive-article-date">
-  	<time datetime="2018-06-06T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-07</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/06/07/正则表达式/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">正则表达式</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/07/正则表达式/">正则表达式</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术整理</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/正则//" class="article-tag-list-link color3">正则</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/06/04/初识react/" class="archive-article-date">
-  	<time datetime="2018-06-03T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-04</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/06/04/初识react/">初识react</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">技术整理</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/js初识//" class="article-tag-list-link color5">js初识</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -341,8 +365,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
